@@ -24,9 +24,9 @@ print("Hráči postupně vybírají pole a - i podle následujícího vzoru:")
 print("a | b | c\n---------\nd | e | f\n---------\ng | h | i")
 
 for i in range(1, 10):
-    if i == 1 or i == 3 or i == 5 or i == 7 or i == 9:
+    if i % 2 == 1:
         print("Hraje hráč 1")
-    elif i == 2 or i == 4 or i == 6 or i == 8:
+    elif i % 2 == 0:
         print("Hraje hráč 2")
     kod1 = input("Zadej kód čtverce:")
 
